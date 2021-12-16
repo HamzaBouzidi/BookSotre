@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookManagement.LoginInterfaceController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="450.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="#2d46b9" glyphName="BOOK" layoutX="166.0" layoutY="233.0" size="110" />
+            <Text fill="#2d46b9" layoutX="123.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOOKS MANAGEMENT">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username_id" layoutX="118.0" layoutY="174.0" promptText="User Name" style="-fx-border-color: #2D46B9; -fx-background-color: transparant; -fx-border-width: 0px0px2px0px;" />
+            <PasswordField fx:id="password_id" layoutX="119.0" layoutY="230.0" promptText="Password" style="-fx-border-color: #2D46B9; -fx-background-color: transparant; -fx-border-width: 0px0px2px0px;" />
+            <Button graphicTextGap="3.0" layoutX="152.0" layoutY="286.0" mnemonicParsing="false" onAction="#SwitchToTableView" style="-fx-background-color: #2D46B9;" text="Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <FontAwesomeIconView fill="#2d46b9" glyphName="USER" layoutX="87.0" layoutY="204.0" size="20" />
+            <FontAwesomeIconView fill="#2d46b9" glyphName="KEY" layoutX="85.0" layoutY="259.0" size="20" />
+            <Text fill="#2d46b9" layoutX="107.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN LOGIN">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </right>
+</BorderPane>
